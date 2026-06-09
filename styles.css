@@ -1291,6 +1291,11 @@ a.contact-method:hover {
     color: white;
 }
 
+.contact-icon.phone {
+    background-color: #0F9D58;
+    color: white;
+}
+
 .contact-text strong {
     display: block;
     margin-bottom: var(--spacing-xs);
