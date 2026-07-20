@@ -1,39 +1,95 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="300" fill="#FFF8E7"/>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FAF3E3"/>
+      <stop offset="1" stop-color="#F0E4CC"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D7BFA0"/>
+      <stop offset="1" stop-color="#C3A582"/>
+    </linearGradient>
+    <linearGradient id="woodTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#8D6E63"/>
+      <stop offset="0.5" stop-color="#A1887F"/>
+      <stop offset="1" stop-color="#795548"/>
+    </linearGradient>
+    <linearGradient id="woodLeg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D4C41"/>
+      <stop offset="1" stop-color="#4E342E"/>
+    </linearGradient>
+    <linearGradient id="chairBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7B5B4F"/>
+      <stop offset="1" stop-color="#5D4037"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF9EC"/>
+      <stop offset="1" stop-color="#FFE9C2"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Table top -->
-  <rect x="80" y="140" width="240" height="15" rx="4" fill="#5D4037"/>
+  <!-- Room -->
+  <rect width="400" height="210" fill="url(#wall)"/>
+  <rect y="210" width="400" height="90" fill="url(#floor)"/>
+  <line x1="0" y1="210" x2="400" y2="210" stroke="#B09067" stroke-width="2"/>
+  <!-- floor boards -->
+  <g stroke="#B99A76" stroke-width="1" opacity="0.6">
+    <line x1="0" y1="235" x2="400" y2="232"/>
+    <line x1="0" y1="262" x2="400" y2="258"/>
+    <line x1="0" y1="288" x2="400" y2="284"/>
+  </g>
 
-  <!-- Table legs -->
-  <rect x="100" y="155" width="12" height="80" fill="#4E342E"/>
-  <rect x="288" y="155" width="12" height="80" fill="#4E342E"/>
+  <!-- Window -->
+  <rect x="28" y="34" width="86" height="110" rx="4" fill="url(#windowLight)" stroke="#C9B08E" stroke-width="5"/>
+  <line x1="71" y1="34" x2="71" y2="144" stroke="#C9B08E" stroke-width="4"/>
+  <line x1="28" y1="90" x2="114" y2="90" stroke="#C9B08E" stroke-width="4"/>
 
-  <!-- Chairs -->
-  <!-- Left chair -->
-  <rect x="50" y="160" width="40" height="50" rx="4" fill="#6D4C41"/>
-  <rect x="55" y="130" width="30" height="35" rx="4" fill="#8D6E63"/>
-  <rect x="55" y="210" width="8" height="25" fill="#4E342E"/>
-  <rect x="77" y="210" width="8" height="25" fill="#4E342E"/>
+  <!-- Wall art -->
+  <rect x="255" y="45" width="60" height="46" rx="3" fill="#FFFDF6" stroke="#A1887F" stroke-width="4"/>
+  <path d="M260 84 L278 62 L290 76 L300 66 L310 84 Z" fill="#8D6E63"/>
+  <circle cx="271" cy="58" r="5" fill="#E0B252"/>
 
-  <!-- Right chair -->
-  <rect x="310" y="160" width="40" height="50" rx="4" fill="#6D4C41"/>
-  <rect x="315" y="130" width="30" height="35" rx="4" fill="#8D6E63"/>
-  <rect x="315" y="210" width="8" height="25" fill="#4E342E"/>
-  <rect x="337" y="210" width="8" height="25" fill="#4E342E"/>
+  <!-- Pendant lamp -->
+  <line x1="200" y1="0" x2="200" y2="52" stroke="#6D4C41" stroke-width="3"/>
+  <path d="M178 52 Q200 38 222 52 L216 72 Q200 80 184 72 Z" fill="#5D4037"/>
+  <ellipse cx="200" cy="74" rx="12" ry="5" fill="#FFE9A8"/>
 
-  <!-- Center chairs (back view) -->
-  <rect x="140" y="95" width="35" height="45" rx="4" fill="#8D6E63"/>
-  <rect x="225" y="95" width="35" height="45" rx="4" fill="#8D6E63"/>
+  <!-- Back chairs -->
+  <g>
+    <rect x="142" y="118" width="34" height="52" rx="6" fill="#8D6E63"/>
+    <rect x="147" y="124" width="24" height="34" rx="4" fill="#A1887F"/>
+    <rect x="228" y="118" width="34" height="52" rx="6" fill="#8D6E63"/>
+    <rect x="233" y="124" width="24" height="34" rx="4" fill="#A1887F"/>
+  </g>
 
-  <!-- Table items -->
-  <ellipse cx="150" y="135" rx="15" ry="8" fill="#BCAAA4"/>
-  <ellipse cx="200" y="135" rx="20" ry="10" fill="#A1887F"/>
-  <ellipse cx="250" y="135" rx="15" ry="8" fill="#BCAAA4"/>
+  <!-- Table -->
+  <ellipse cx="202" cy="248" rx="118" ry="14" fill="#3E2723" opacity="0.18"/>
+  <rect x="88" y="166" width="228" height="16" rx="6" fill="url(#woodTop)"/>
+  <rect x="88" y="182" width="228" height="6" rx="3" fill="#5D4037"/>
+  <rect x="104" y="188" width="14" height="56" rx="3" fill="url(#woodLeg)"/>
+  <rect x="286" y="188" width="14" height="56" rx="3" fill="url(#woodLeg)"/>
 
-  <!-- Floor line -->
-  <line x1="20" y1="235" x2="380" y2="235" stroke="#D7CCC8" stroke-width="2"/>
+  <!-- Tableware -->
+  <ellipse cx="150" cy="165" rx="18" ry="6" fill="#EFE5D2" stroke="#C9B08E"/>
+  <ellipse cx="252" cy="165" rx="18" ry="6" fill="#EFE5D2" stroke="#C9B08E"/>
+  <ellipse cx="201" cy="162" rx="14" ry="6" fill="#B85C38"/>
+  <path d="M195 158 Q201 148 207 158" stroke="#7A9E5F" stroke-width="3" fill="none"/>
 
-  <!-- Label -->
-  <rect x="130" y="250" width="140" height="25" rx="12" fill="#5D4037"/>
-  <text x="200" y="267" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">COMEDORES</text>
+  <!-- Front chairs -->
+  <g>
+    <rect x="96" y="150" width="44" height="26" rx="6" fill="url(#chairBack)"/>
+    <rect x="96" y="176" width="44" height="42" rx="8" fill="#6D4C41"/>
+    <rect x="100" y="218" width="9" height="34" rx="3" fill="url(#woodLeg)"/>
+    <rect x="127" y="218" width="9" height="34" rx="3" fill="url(#woodLeg)"/>
+    <rect x="264" y="150" width="44" height="26" rx="6" fill="url(#chairBack)"/>
+    <rect x="264" y="176" width="44" height="42" rx="8" fill="#6D4C41"/>
+    <rect x="268" y="218" width="9" height="34" rx="3" fill="url(#woodLeg)"/>
+    <rect x="295" y="218" width="9" height="34" rx="3" fill="url(#woodLeg)"/>
+  </g>
+
+  <!-- Plant -->
+  <g>
+    <path d="M352 158 Q344 130 358 112 M352 158 Q362 132 348 116 M352 158 Q352 128 366 122" stroke="#6B8E4E" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M340 158 h26 l-4 34 h-18 Z" fill="#B85C38"/>
+    <path d="M340 158 h26 l-1 8 h-24 Z" fill="#9C4A2B"/>
+  </g>
 </svg>

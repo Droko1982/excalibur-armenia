@@ -1,41 +1,92 @@
-<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="400" height="300" fill="#FFF8E7"/>
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ewall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F8EFDD"/>
+      <stop offset="1" stop-color="#EDDFC2"/>
+    </linearGradient>
+    <linearGradient id="efloor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D7BFA0"/>
+      <stop offset="1" stop-color="#C3A582"/>
+    </linearGradient>
+    <linearGradient id="deskTop" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A1887F"/>
+      <stop offset="0.5" stop-color="#8D6E63"/>
+      <stop offset="1" stop-color="#795548"/>
+    </linearGradient>
+    <linearGradient id="eleg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6D4C41"/>
+      <stop offset="1" stop-color="#4E342E"/>
+    </linearGradient>
+    <linearGradient id="chairSeat" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7B5B4F"/>
+      <stop offset="1" stop-color="#5D4037"/>
+    </linearGradient>
+  </defs>
 
-  <!-- Desk top -->
-  <rect x="50" y="140" width="300" height="15" rx="2" fill="#5D4037"/>
+  <!-- Room -->
+  <rect width="400" height="208" fill="url(#ewall)"/>
+  <rect y="208" width="400" height="92" fill="url(#efloor)"/>
+  <line x1="0" y1="208" x2="400" y2="208" stroke="#B09067" stroke-width="2"/>
 
-  <!-- Left leg with drawer -->
-  <rect x="60" y="155" width="80" height="90" rx="4" fill="#6D4C41"/>
-  <rect x="65" y="165" width="70" height="25" rx="2" fill="#8D6E63"/>
-  <rect x="65" y="195" width="70" height="25" rx="2" fill="#8D6E63"/>
-  <rect x="65" y="225" width="70" height="15" rx="2" fill="#8D6E63"/>
+  <!-- Shelves on wall -->
+  <g>
+    <rect x="42" y="42" width="110" height="8" rx="3" fill="#8D6E63"/>
+    <rect x="56" y="20" width="14" height="22" rx="2" fill="#B85C38"/>
+    <rect x="74" y="16" width="14" height="26" rx="2" fill="#6B8E4E"/>
+    <rect x="92" y="24" width="14" height="18" rx="2" fill="#E0B252"/>
+    <path d="M124 42 Q118 26 130 18 M124 42 Q132 28 122 22" stroke="#6B8E4E" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <rect x="42" y="86" width="110" height="8" rx="3" fill="#8D6E63"/>
+    <rect x="58" y="66" width="30" height="20" rx="2" fill="#A1887F"/>
+    <rect x="96" y="62" width="16" height="24" rx="2" fill="#C98A4B"/>
+  </g>
 
-  <!-- Drawer handles -->
-  <rect x="92" y="175" width="16" height="4" rx="2" fill="#D7CCC8"/>
-  <rect x="92" y="205" width="16" height="4" rx="2" fill="#D7CCC8"/>
+  <!-- Clock -->
+  <circle cx="316" cy="56" r="24" fill="#FFFDF6" stroke="#8D6E63" stroke-width="5"/>
+  <path d="M316 56 L316 42 M316 56 L326 62" stroke="#5D4037" stroke-width="3" stroke-linecap="round"/>
 
-  <!-- Right leg -->
-  <rect x="260" y="155" width="80" height="90" rx="4" fill="#6D4C41"/>
+  <!-- Desk shadow -->
+  <ellipse cx="205" cy="258" rx="140" ry="14" fill="#3E2723" opacity="0.16"/>
 
-  <!-- Items on desk -->
   <!-- Monitor -->
-  <rect x="170" y="80" width="80" height="55" rx="4" fill="#4E342E"/>
-  <rect x="175" y="85" width="70" height="45" fill="#81D4FA"/>
-  <rect x="200" y="135" width="20" height="5" fill="#5D4037"/>
-  <rect x="190" y="138" width="40" height="3" rx="1" fill="#6D4C41"/>
+  <rect x="150" y="96" width="104" height="66" rx="6" fill="#37474F"/>
+  <rect x="156" y="102" width="92" height="54" rx="3" fill="#B0BEC5"/>
+  <path d="M164 144 L188 118 L204 132 L222 112 L240 144 Z" fill="#78909C"/>
+  <circle cx="180" cy="114" r="6" fill="#FFE9A8"/>
+  <rect x="196" y="162" width="12" height="14" fill="#37474F"/>
+  <rect x="180" y="176" width="44" height="6" rx="3" fill="#37474F"/>
 
-  <!-- Lamp -->
-  <rect x="290" y="115" width="8" height="25" fill="#FFCC80"/>
-  <ellipse cx="294" y="115" rx="20" ry="12" fill="#FFE0B2"/>
+  <!-- Desk lamp -->
+  <path d="M288 172 L272 140" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+  <path d="M272 140 L296 128" stroke="#5D4037" stroke-width="4" stroke-linecap="round"/>
+  <path d="M300 124 a10 10 0 0 0 -12 10 l16 6 Z" fill="#E0B252"/>
+  <ellipse cx="288" cy="176" rx="14" ry="4" fill="#4E342E"/>
 
-  <!-- Plant -->
-  <rect x="70" y="110" width="25" height="30" rx="4" fill="#A1887F"/>
-  <ellipse cx="82" y="100" rx="18" ry="20" fill="#81C784"/>
+  <!-- Books + mug on desk -->
+  <rect x="112" y="164" width="30" height="6" rx="2" fill="#B85C38"/>
+  <rect x="116" y="158" width="26" height="6" rx="2" fill="#6B8E4E"/>
+  <rect x="120" y="152" width="20" height="6" rx="2" fill="#E0B252"/>
+  <rect x="322" y="164" width="16" height="18" rx="3" fill="#B85C38"/>
+  <path d="M338 168 q8 2 0 10" stroke="#B85C38" stroke-width="3" fill="none"/>
+  <path d="M326 158 q2 -6 6 -8 M332 158 q0 -5 4 -9" stroke="#C9B08E" stroke-width="2" fill="none" stroke-linecap="round"/>
 
-  <!-- Floor line -->
-  <line x1="20" y1="245" x2="380" y2="245" stroke="#D7CCC8" stroke-width="2"/>
+  <!-- Desk -->
+  <rect x="92" y="182" width="256" height="14" rx="5" fill="url(#deskTop)"/>
+  <rect x="92" y="196" width="256" height="5" rx="2" fill="#5D4037"/>
+  <!-- Drawer unit -->
+  <rect x="288" y="201" width="52" height="52" rx="4" fill="#6D4C41"/>
+  <rect x="293" y="208" width="42" height="16" rx="3" fill="#8D6E63"/>
+  <rect x="306" y="214" width="16" height="4" rx="2" fill="#D7CCC8"/>
+  <rect x="293" y="230" width="42" height="16" rx="3" fill="#8D6E63"/>
+  <rect x="306" y="236" width="16" height="4" rx="2" fill="#D7CCC8"/>
+  <!-- Legs -->
+  <rect x="100" y="201" width="10" height="54" rx="3" fill="url(#eleg)"/>
+  <rect x="100" y="252" width="52" height="6" rx="3" fill="url(#eleg)"/>
 
-  <!-- Label -->
-  <rect x="100" y="260" width="200" height="25" rx="12" fill="#5D4037"/>
-  <text x="200" y="277" font-family="Arial" font-size="12" fill="white" text-anchor="middle" font-weight="bold">ESCRITORIOS Y NOCHEROS</text>
+  <!-- Chair -->
+  <g>
+    <rect x="158" y="196" width="60" height="16" rx="8" fill="url(#chairSeat)"/>
+    <rect x="204" y="146" width="14" height="56" rx="7" fill="url(#chairSeat)"/>
+    <rect x="182" y="212" width="10" height="30" fill="#4E342E"/>
+    <path d="M160 262 L214 262 M187 242 L187 254 M168 262 L172 250 L202 250 L206 262" stroke="#4E342E" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
 </svg>
