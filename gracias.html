@@ -11,7 +11,10 @@
     <meta name="robots" content="noindex, nofollow">
 
     <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-S5LZHPLNCJ"></script>
+    <!-- fetchpriority=low: gtag pesa 166 KB y es el recurso mas grande del sitio.
+         Sin esto competia por el ancho de banda con el CSS y las fuentes justo
+         cuando la pagina intenta pintar. Sigue cargando en la misma visita. -->
+    <script async fetchpriority="low" src="https://www.googletagmanager.com/gtag/js?id=G-S5LZHPLNCJ"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
