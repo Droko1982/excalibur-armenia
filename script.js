@@ -352,6 +352,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     categoryCards.forEach(card => {
         card.addEventListener('click', function(e) {
+            // Las tarjetas que apuntan a WhatsApp deben abrir el chat (su CTA dice
+            // "Cotizar por WhatsApp"). Solo filtramos en el catálogo las que no lo hacen.
+            if (this.href && this.href.includes('wa.me')) {
+                return;
+            }
+
             e.preventDefault();
             const category = this.dataset.category;
 
