@@ -106,37 +106,161 @@
         "openingHoursSpecification": [
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                ],
                 "opens": "09:00",
                 "closes": "18:30"
             },
             {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Sunday"],
+                "dayOfWeek": [
+                    "Sunday"
+                ],
                 "opens": "10:00",
                 "closes": "14:00"
             }
         ],
-        "priceRange": "$$",
+        "priceRange": "$",
         "paymentAccepted": "Efectivo, Transferencia bancaria",
         "currenciesAccepted": "COP",
         "areaServed": [
-            { "@type": "State", "name": "Quindío" },
-            { "@type": "City", "name": "Armenia" },
-            { "@type": "City", "name": "Calarcá" },
-            { "@type": "City", "name": "Montenegro" },
-            { "@type": "City", "name": "Circasia" },
-            { "@type": "City", "name": "La Tebaida" },
-            { "@type": "City", "name": "Quimbaya" },
-            { "@type": "City", "name": "Filandia" },
-            { "@type": "City", "name": "Salento" }
+            {
+                "@type": "State",
+                "name": "Quindío"
+            },
+            {
+                "@type": "City",
+                "name": "Armenia"
+            },
+            {
+                "@type": "City",
+                "name": "Calarcá"
+            },
+            {
+                "@type": "City",
+                "name": "Montenegro"
+            },
+            {
+                "@type": "City",
+                "name": "Circasia"
+            },
+            {
+                "@type": "City",
+                "name": "La Tebaida"
+            },
+            {
+                "@type": "City",
+                "name": "Quimbaya"
+            },
+            {
+                "@type": "City",
+                "name": "Filandia"
+            },
+            {
+                "@type": "City",
+                "name": "Salento"
+            }
         ],
         "image": "https://mueblesexcalibur.com/images/og-image.jpg",
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "127"
-        }
+            "ratingValue": "5",
+            "reviewCount": "6",
+            "bestRating": "5",
+            "worstRating": "1"
+        },
+        "review": [
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "María Camila R."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "Mandé una foto de Pinterest y me lo hicieron igualito. Increíble el trabajo y la atención."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Juan Pablo M."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "Excelente calidad y muy buena atención. El comedor quedó hermoso y llegó en la fecha prometida."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Andrea M."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "Cumplidos con la fecha de entrega y el precio justo. El closet quedó perfecto para el espacio que tenía."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Carlos R."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "El armario quedó perfecto para el apartamento. Muy profesionales y el precio muy competitivo."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Laura G."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "Nos entregaron un comedor hermoso en Filandia. El transporte fue rápido y todo llegó en perfecto estado. Muy recomendados."
+            },
+            {
+                "@type": "Review",
+                "author": {
+                    "@type": "Person",
+                    "name": "Diego F."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "bestRating": "5",
+                    "worstRating": "1"
+                },
+                "reviewBody": "La sala quedó espectacular. Envío hasta Quimbaya sin ningún problema. Excelente relación calidad-precio."
+            }
+        ]
     }
     </script>
 
@@ -345,19 +469,20 @@
                     "name": "Sala Modular Milán",
                     "description": "Sofá de 3 puestos con opción de chaise longue. Disponible a medida en múltiples colores. Ideal para hogares en Armenia, Quindío.",
                     "image": "https://mueblesexcalibur.com/images/sala-3.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "800000",
                         "highPrice": "2500000",
                         "availability": "https://schema.org/InStock",
-                        "seller": { "@type": "Organization", "name": "Muebles Excalibur" }
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.9",
-                        "reviewCount": "34"
+                        "seller": {
+                            "@type": "Organization",
+                            "name": "Muebles Excalibur"
+                        }
                     }
                 }
             },
@@ -368,19 +493,17 @@
                     "@type": "Product",
                     "name": "Comedor Rústico 6 Puestos",
                     "description": "Mesa en madera maciza con acabado natural. Sillas ergonómicas con tapizado lavable. Entrega en Armenia y todo el Quindío.",
-                    "image": "https://mueblesexcalibur.com/images/ilustracion-comedores.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "image": "https://mueblesexcalibur.com/images/ref-comedores.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "1200000",
                         "highPrice": "3500000",
                         "availability": "https://schema.org/InStock"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.8",
-                        "reviewCount": "28"
                     }
                 }
             },
@@ -391,19 +514,17 @@
                     "@type": "Product",
                     "name": "Cama Elegance con Cabecero",
                     "description": "Base cama con cabecero tapizado capitoneado. Disponible en todas las medidas estándar. Envío a todo el Quindío.",
-                    "image": "https://mueblesexcalibur.com/images/ilustracion-camas.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "image": "https://mueblesexcalibur.com/images/ref-camas.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "600000",
                         "highPrice": "1800000",
                         "availability": "https://schema.org/InStock"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.7",
-                        "reviewCount": "22"
                     }
                 }
             },
@@ -414,19 +535,17 @@
                     "@type": "Product",
                     "name": "Closet Moderno 4 Puertas",
                     "description": "Amplio espacio de almacenamiento con barras, cajones y estantes. Diseño elegante y funcional para hogares del Quindío.",
-                    "image": "https://mueblesexcalibur.com/images/ilustracion-closets.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "image": "https://mueblesexcalibur.com/images/ref-closets.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "900000",
                         "highPrice": "3000000",
                         "availability": "https://schema.org/InStock"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.8",
-                        "reviewCount": "19"
                     }
                 }
             },
@@ -438,18 +557,16 @@
                     "name": "Sofácama Convertible",
                     "description": "Perfecto para espacios pequeños. Se transforma fácilmente de sofá a cama doble. Ideal para apartamentos en Armenia y La Tebaida.",
                     "image": "https://mueblesexcalibur.com/images/sala-6.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "700000",
                         "highPrice": "2000000",
                         "availability": "https://schema.org/InStock"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.9",
-                        "reviewCount": "15"
                     }
                 }
             },
@@ -460,19 +577,17 @@
                     "@type": "Product",
                     "name": "Escritorio Home Office",
                     "description": "Diseño minimalista con espacio para cables y cajones laterales. Perfecto para trabajar desde casa en Armenia y el Quindío.",
-                    "image": "https://mueblesexcalibur.com/images/ilustracion-escritorios.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "image": "https://mueblesexcalibur.com/images/ref-escritorios.jpg",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "350000",
                         "highPrice": "1200000",
                         "availability": "https://schema.org/InStock"
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.7",
-                        "reviewCount": "12"
                     }
                 }
             },
@@ -484,19 +599,20 @@
                     "name": "Tocador con Espejo Corredizo",
                     "description": "Tocador con espejo de cuerpo entero corredizo, entrepaños y cajones. Ideal para habitaciones en Armenia y todo el Quindío.",
                     "image": "https://mueblesexcalibur.com/images/espejo-1.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "450000",
                         "highPrice": "1500000",
                         "availability": "https://schema.org/InStock",
-                        "seller": { "@type": "Organization", "name": "Muebles Excalibur" }
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.8",
-                        "reviewCount": "11"
+                        "seller": {
+                            "@type": "Organization",
+                            "name": "Muebles Excalibur"
+                        }
                     }
                 }
             },
@@ -508,19 +624,20 @@
                     "name": "Poltrona Chesterfield Tapizada",
                     "description": "Poltrona tapizada estilo Chesterfield con tachuelas decorativas. Disponible en múltiples telas y colores. Fabricada en Armenia, Quindío.",
                     "image": "https://mueblesexcalibur.com/images/sala-17.jpg",
-                    "brand": { "@type": "Brand", "name": "Muebles Excalibur" },
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "Muebles Excalibur"
+                    },
                     "offers": {
                         "@type": "AggregateOffer",
                         "priceCurrency": "COP",
                         "lowPrice": "400000",
                         "highPrice": "1200000",
                         "availability": "https://schema.org/InStock",
-                        "seller": { "@type": "Organization", "name": "Muebles Excalibur" }
-                    },
-                    "aggregateRating": {
-                        "@type": "AggregateRating",
-                        "ratingValue": "4.9",
-                        "reviewCount": "9"
+                        "seller": {
+                            "@type": "Organization",
+                            "name": "Muebles Excalibur"
+                        }
                     }
                 }
             }
@@ -673,33 +790,33 @@
 
                 <a href="https://wa.me/573188398532?text=(Orden%20en%20linea)%20Hola%20Mauricio%20%F0%9F%91%8B%20Estoy%20interesado%20en%20los%20Comedores.%20%C2%BFPodr%C3%ADan%20mostrarme%20opciones%20y%20precios%3F" class="category-card" data-category="comedores">
                     <div class="category-image">
-                        <picture><source srcset="images/ilustracion-comedores.webp" type="image/webp"><img src="images/ilustracion-comedores.jpg" width="800" height="600" alt="Comedores en Armenia Quindío - venta de comedores baratos" loading="lazy"></picture>
+                        <picture><source srcset="images/ref-comedores.webp" type="image/webp"><img src="images/ref-comedores.jpg" width="800" height="600" alt="Comedor rústico en madera, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
                     </div>
                     <div class="category-content">
                         <h3>Comedores</h3>
-                        <p><strong>Consultar precio</strong></p>
+                        <p><strong>Consultar precio</strong> <span style="font-weight:400; font-size:0.8rem; color:var(--color-text-muted);">· foto de referencia</span></p>
                         <span class="category-cta">Cotizar por WhatsApp →</span>
                     </div>
                 </a>
 
                 <a href="https://wa.me/573188398532?text=(Orden%20en%20linea)%20Hola%20Mauricio%20%F0%9F%91%8B%20Estoy%20interesado%20en%20las%20Camas.%20%C2%BFPodr%C3%ADan%20mostrarme%20opciones%20y%20precios%3F" class="category-card" data-category="camas">
                     <div class="category-image">
-                        <picture><source srcset="images/ilustracion-camas.webp" type="image/webp"><img src="images/ilustracion-camas.jpg" width="800" height="600" alt="Camas y colchones en Armenia Quindío - precios de fábrica" loading="lazy"></picture>
+                        <picture><source srcset="images/ref-camas.webp" type="image/webp"><img src="images/ref-camas.jpg" width="800" height="600" alt="Cama con cabecero tapizado, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
                     </div>
                     <div class="category-content">
                         <h3>Camas y Colchones</h3>
-                        <p><strong>Consultar precio</strong></p>
+                        <p><strong>Consultar precio</strong> <span style="font-weight:400; font-size:0.8rem; color:var(--color-text-muted);">· foto de referencia</span></p>
                         <span class="category-cta">Cotizar por WhatsApp →</span>
                     </div>
                 </a>
 
                 <a href="https://wa.me/573188398532?text=(Orden%20en%20linea)%20Hola%20Mauricio%20%F0%9F%91%8B%20Estoy%20interesado%20en%20los%20Armarios%20y%20Closets.%20%C2%BFPodr%C3%ADan%20mostrarme%20opciones%20y%20precios%3F" class="category-card" data-category="armarios">
                     <div class="category-image">
-                        <picture><source srcset="images/ilustracion-closets.webp" type="image/webp"><img src="images/ilustracion-closets.jpg" width="800" height="600" alt="Closets y armarios a medida en Armenia Quindío - los fabricamos desde tu foto" loading="lazy"></picture>
+                        <picture><source srcset="images/ref-closets.webp" type="image/webp"><img src="images/ref-closets.jpg" width="800" height="600" alt="Closet con barras, entrepaños y cajones, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
                     </div>
                     <div class="category-content">
                         <h3>Armarios y Closets</h3>
-                        <p><strong>Consultar precio</strong></p>
+                        <p><strong>Consultar precio</strong> <span style="font-weight:400; font-size:0.8rem; color:var(--color-text-muted);">· foto de referencia</span></p>
                         <span class="category-cta">Cotizar por WhatsApp →</span>
                     </div>
                 </a>
@@ -717,11 +834,11 @@
 
                 <a href="https://wa.me/573188398532?text=(Orden%20en%20linea)%20Hola%20Mauricio%20%F0%9F%91%8B%20Estoy%20interesado%20en%20los%20Escritorios%20y%20Nocheros.%20%C2%BFPodr%C3%ADan%20mostrarme%20opciones%20y%20precios%3F" class="category-card" data-category="escritorios">
                     <div class="category-image">
-                        <picture><source srcset="images/ilustracion-escritorios.webp" type="image/webp"><img src="images/ilustracion-escritorios.jpg" width="800" height="600" alt="Escritorios y nocheros en Armenia Quindío - muebles de oficina" loading="lazy"></picture>
+                        <picture><source srcset="images/ref-escritorios.webp" type="image/webp"><img src="images/ref-escritorios.jpg" width="800" height="600" alt="Escritorio en madera para home office, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
                     </div>
                     <div class="category-content">
                         <h3>Escritorios y Nocheros</h3>
-                        <p><strong>Consultar precio</strong></p>
+                        <p><strong>Consultar precio</strong> <span style="font-weight:400; font-size:0.8rem; color:var(--color-text-muted);">· foto de referencia</span></p>
                         <span class="category-cta">Cotizar por WhatsApp →</span>
                     </div>
                 </a>
@@ -802,8 +919,8 @@
                 <!-- Product 2 -->
                 <article class="product-card" data-category="comedores">
                     <div class="product-image">
-                        <picture><source srcset="images/ilustracion-comedores.webp" type="image/webp"><img src="images/ilustracion-comedores.jpg" width="800" height="600" alt="Comedor rústico 6 puestos a medida en Armenia Quindío - lo fabricamos desde tu foto" loading="lazy"></picture>
-                        <span class="product-badge">A tu medida</span>
+                        <picture><source srcset="images/ref-comedores.webp" type="image/webp"><img src="images/ref-comedores.jpg" width="800" height="600" alt="Comedor rústico en madera, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
+                        <span class="product-badge">Foto de referencia</span>
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Comedor Rústico 6 Puestos</h3>
@@ -829,8 +946,8 @@
                 <!-- Product 3 -->
                 <article class="product-card" data-category="camas">
                     <div class="product-image">
-                        <picture><source srcset="images/ilustracion-camas.webp" type="image/webp"><img src="images/ilustracion-camas.jpg" width="800" height="600" alt="Cama con cabecero tapizado a medida en Armenia Quindío - la fabricamos desde tu foto" loading="lazy"></picture>
-                        <span class="product-badge">A tu medida</span>
+                        <picture><source srcset="images/ref-camas.webp" type="image/webp"><img src="images/ref-camas.jpg" width="800" height="600" alt="Cama con cabecero tapizado, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
+                        <span class="product-badge">Foto de referencia</span>
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Cama Elegance con Cabecero</h3>
@@ -856,8 +973,8 @@
                 <!-- Product 4 -->
                 <article class="product-card" data-category="armarios">
                     <div class="product-image">
-                        <picture><source srcset="images/ilustracion-closets.webp" type="image/webp"><img src="images/ilustracion-closets.jpg" width="800" height="600" alt="Closet moderno 4 puertas a medida en Armenia Quindío - lo fabricamos desde tu foto" loading="lazy"></picture>
-                        <span class="product-badge">A tu medida</span>
+                        <picture><source srcset="images/ref-closets.webp" type="image/webp"><img src="images/ref-closets.jpg" width="800" height="600" alt="Closet con barras, entrepaños y cajones, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
+                        <span class="product-badge">Foto de referencia</span>
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Closet Moderno 4 Puertas</h3>
@@ -909,8 +1026,8 @@
                 <!-- Product 6 -->
                 <article class="product-card" data-category="escritorios">
                     <div class="product-image">
-                        <picture><source srcset="images/ilustracion-escritorios.webp" type="image/webp"><img src="images/ilustracion-escritorios.jpg" width="800" height="600" alt="Escritorio home office a medida en Armenia Quindío - lo fabricamos desde tu foto" loading="lazy"></picture>
-                        <span class="product-badge">A tu medida</span>
+                        <picture><source srcset="images/ref-escritorios.webp" type="image/webp"><img src="images/ref-escritorios.jpg" width="800" height="600" alt="Escritorio en madera para home office, estilo de referencia que fabricamos a medida en Armenia Quindío" loading="lazy"></picture>
+                        <span class="product-badge">Foto de referencia</span>
                     </div>
                     <div class="product-content">
                         <h3 class="product-title">Escritorio Home Office</h3>
