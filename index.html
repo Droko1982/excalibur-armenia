@@ -62,7 +62,10 @@
 
     <!-- Preconnect for Performance -->
     <link rel="dns-prefetch" href="https://wa.me">
-    <link rel="preload" as="image" href="images/sala-1.webp" type="image/webp">
+    <!-- El hero solo se muestra desde 1024px (.hero-image esta en display:none por
+         debajo), asi que sin este media el celular descargaba la imagen con
+         prioridad alta para no mostrarla nunca. -->
+    <link rel="preload" as="image" href="images/sala-1.webp" imagesrcset="images/sala-1-800.webp 800w, images/sala-1.webp 1200w" imagesizes="50vw" type="image/webp" media="(min-width: 1024px)">
 
     <!-- Fonts -->
     <link rel="preload" href="fonts/open-sans-variable.woff2" as="font" type="font/woff2" crossorigin>
@@ -603,7 +606,7 @@
 
             <div class="hero-image">
                 <div class="hero-image-wrapper">
-                    <picture><source srcset="images/sala-1.webp" type="image/webp"><img src="images/sala-1.jpg" width="2048" height="1152" alt="Sala moderna en Armenia Quindío - Muebles Excalibur fábrica de muebles" loading="eager"></picture>
+                    <picture><source srcset="images/sala-1-800.webp 800w, images/sala-1.webp 1200w" sizes="50vw" type="image/webp"><img src="images/sala-1.jpg" width="2048" height="1152" alt="Sala moderna en Armenia Quindío - Muebles Excalibur fábrica de muebles" loading="lazy" fetchpriority="high"></picture>
                     <div class="hero-image-badge">
                         <span class="badge-number">+500</span>
                         <span class="badge-text">familias del Quindío nos prefieren</span>
@@ -1651,7 +1654,7 @@
 
                 <div class="contact-map">
                     <div class="store-image" style="border-radius: 16px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
-                        <picture><source srcset="images/sala-1.webp" type="image/webp"><img src="images/sala-1.jpg" width="2048" height="1152" alt="Tienda de muebles en Armenia Quindío - Muebles Excalibur showroom" style="width: 100%; height: auto; display: block;"></picture>
+                        <picture><source srcset="images/sala-1-800.webp" type="image/webp"><img src="images/sala-1.jpg" width="2048" height="1152" alt="Tienda de muebles en Armenia Quindío - Muebles Excalibur showroom" loading="lazy" style="width: 100%; height: auto; display: block;"></picture>
                         <div style="background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%); padding: 1.5rem; text-align: center;">
                             <h3 style="color: white; margin-bottom: 0.5rem;">Nuestra tienda en Armenia</h3>
                             <p style="color: rgba(255,255,255,0.9); font-size: 0.9rem; margin-bottom: 1rem;">Visitanos o comprá online con 10-15% de descuento</p>
