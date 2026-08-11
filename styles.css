@@ -220,7 +220,11 @@ h4 { font-size: 1.125rem; }
    HEADER
    ============================================ */
 .header {
-    position: fixed;
+    /* Sticky y no fixed: la franja de promocion va arriba en el flujo y tiene
+       z-index 1001, asi que un header fixed en top:0 quedaba medio tapado por
+       ella. Con sticky el header se ubica debajo de la franja y se pega al
+       borde superior apenas la franja sale con el scroll. */
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -333,7 +337,9 @@ h4 { font-size: 1.125rem; }
    ============================================ */
 .hero {
     position: relative;
-    padding-top: 120px;
+    /* Con el header sticky ya no hace falta reservar su alto: ocupa su lugar
+       en el flujo. Antes eran 120px para no quedar debajo del header fixed. */
+    padding-top: 50px;
     padding-bottom: 80px;
     background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     overflow: hidden;
@@ -1447,18 +1453,18 @@ a.contact-method:hover {
    WHATSAPP FLOAT
    ============================================ */
 .whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    width: 60px;
-    height: 60px;
-    background-color: var(--color-accent);
-    color: white;
-    border-radius: 50%;
-    display: flex;
+    /* El boton vive dentro de .whatsapp-container, que ya lo fija abajo a la
+       derecha. Esta regla lo volvia a fijar por su cuenta y lo encerraba en un
+       circulo de 60x60, asi que la palabra "Cotizar" se salia del boton.
+       Ahora es una pastilla que se ajusta a su contenido. */
+    display: inline-flex;
     align-items: center;
     justify-content: center;
+    gap: 8px;
+    padding: 14px 20px;
+    background-color: var(--color-accent);
+    color: white;
+    border-radius: 50px;
     box-shadow: var(--shadow-lg);
     transition: all var(--transition-base);
 }
