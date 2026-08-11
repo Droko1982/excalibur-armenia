@@ -1,2 +1,17 @@
-# Local Netlify folder
+# Sobras de Netlify: el sitio se despliega por GitHub Pages, no por Netlify
 .netlify
+
+# Carpeta temporal para descargar/preparar fotos antes de moverlas a images/
+temp_download/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/
+
+# Node (por si se usan herramientas de optimizacion de imagenes)
+node_modules/
