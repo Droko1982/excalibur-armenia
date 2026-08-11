@@ -255,11 +255,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     whatsappLinks.forEach(link => {
         link.addEventListener('click', function() {
-            // Track WhatsApp clicks
+            // Decodificar el mensaje prellenado para saber qué producto pidió el cliente
+            let producto = 'Contacto general';
+            try {
+                const url = new URL(this.href);
+                const texto = decodeURIComponent(url.searchParams.get('text') || '');
+                producto = texto.replace(/\(Orden en linea\)\s*Hola Mauricio\s*👋\s*/, '').trim() || 'Contacto general';
+            } catch (err) { /* dejar valor por defecto */ }
+
+            // Track WhatsApp clicks (evento GA4 con producto y página)
             if (typeof gtag === 'function') {
-                gtag('event', 'click', {
+                gtag('event', 'whatsapp_click', {
                     event_category: 'WhatsApp',
-                    event_label: this.textContent.trim() || 'WhatsApp Button',
+                    event_label: producto.substring(0, 100),
+                    producto: producto.substring(0, 100),
+                    pagina: window.location.pathname,
+                    transport_type: 'beacon',
                     value: 1
                 });
             }
@@ -267,11 +278,12 @@ document.addEventListener('DOMContentLoaded', function() {
             // Track with Facebook Pixel
             if (typeof fbq === 'function') {
                 fbq('track', 'Contact', {
-                    content_name: 'WhatsApp Click'
+                    content_name: 'WhatsApp Click',
+                    content_category: producto.substring(0, 100)
                 });
             }
 
-            console.log('WhatsApp click tracked:', this.href);
+            console.log('WhatsApp click tracked:', producto);
         });
     });
 
