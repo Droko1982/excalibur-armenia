@@ -229,8 +229,12 @@ h4 { font-size: 1.125rem; }
     left: 0;
     right: 0;
     z-index: 1000;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    /* Fondo opaco y sin backdrop-filter. El desenfoque obligaba al navegador a
+       recomponer todo lo que pasa por detras en cada cuadro del scroll, caro en
+       celulares, y con el fondo al 95% apenas se percibia. Al quitarlo, ese 5%
+       dejaba leer el texto de abajo a traves del header; opaco se ve mas limpio
+       y es lo mas barato de componer. */
+    background-color: #FFFFFF;
     box-shadow: var(--shadow-sm);
     transition: all var(--transition-base);
 }
@@ -1671,7 +1675,7 @@ a.contact-method:hover {
 }
 
 .whatsapp-float {
-    animation: pulse 2s infinite;
+    animation: pulse 2s ease-in-out 6;
 }
 
 /* Accessibility */
