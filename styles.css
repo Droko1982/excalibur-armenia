@@ -246,6 +246,18 @@ h4 { font-size: 1.125rem; }
     height: 70px;
 }
 
+/* Las paginas que no son el inicio envuelven el contenido del header en
+   .header-content, y ese selector no tenia ninguna regla. Al quedar como bloque,
+   el logo, el menu y el telefono se apilaban en vertical y se desbordaban de los
+   70px del header, montandose sobre la franja de promocion. */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    width: 100%;
+}
+
 .logo {
     display: flex;
     align-items: center;

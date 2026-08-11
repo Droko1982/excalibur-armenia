@@ -4,3 +4,4 @@ Disallow: /404.html
 Disallow: /gracias.html
 
 Sitemap: https://mueblesexcalibur.com/sitemap.xml
+Sitemap: https://mueblesexcalibur.com/sitemap-imagenes.xml
